@@ -86,7 +86,7 @@
 </template>
 <script>
     export default {
-        name: 'data-table-2',
+        name: 'data-table',
         props: {
             data: Array,
             sortedItem: String,
