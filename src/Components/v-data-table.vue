@@ -86,9 +86,10 @@
 </template>
 <script>
     export default {
-        name: 'data-table',
+        name: 'data-table-2',
         props: {
             data: Array,
+            sortedItem: String,
             columnsToDisplay: {
                 type: Array,
                 default() {
@@ -279,6 +280,11 @@
                 }
             }
 
+        },
+        watch: {
+            sortedItem: function(){
+                this.sortBy(this.sortedItem);
+            }
         }
     }
 </script>
